@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="modem_com.App" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="modem_com.ModemCommunication">
+    <Position X="8.75" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="lengthChecker" Hidden="true" />
+      <Field Name="rxWorker" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+      <Field Name="tim1" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="modem_com.ModemCommunication.LookingFor" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ModemCommunication.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEAAAGHABAQAAQAAAAAGgIASAAAAAAEEIAAAEAAkAA=</HashCode>
+      <FileName>ModemCommunication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="modem_com.ModemRequest">
+    <Position X="4.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAIAAAAAEAAQAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>ModemRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="modem_com.Terminal" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="0.5" Width="2.25" />
+    <AssociationLine Name="modemCommunication" Type="modem_com.ModemCommunication" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="1.803" />
+        <Point X="8.75" Y="1.803" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgGAAACAAAAAAAAAAIAAAQBAAIAEAACAAAA=</HashCode>
+      <FileName>Terminal.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="modemCommunication" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System.Windows.Application" Collapsed="true">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="modem_com.Command">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAQEAAAAICAAAAAAAQAAAAAAAAAAIAIA=</HashCode>
+      <FileName>ModemRequest.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="modem_com.Mode">
+    <Position X="2.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModemRequest.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="modem_com.Modulation">
+    <Position X="4" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAIAAAAAAAAAAAAAIAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>ModemRequest.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="modem_com.TerminalWrite">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModemCommunication.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
